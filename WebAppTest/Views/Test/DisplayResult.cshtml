@@ -1,0 +1,27 @@
+﻿@model WebAppTest.Models.TestResultModel
+
+@{
+    ViewBag.Title = "DisplayResult";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Display Result</h2>
+
+<div>
+    <h4>TestResultModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Result)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Result)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
